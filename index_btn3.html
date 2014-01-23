@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+
+
+</head>
+
+<body>
+<!--Page 1 -->
+<div data-role="page" id="page1">
+	  
+  <!--content -->
+  <div role="main" class="ui-content">
+  <center>	
+  <h2>Selamat Datang</h2>
+  <img src="gambar/hpp.png" style="" />
+  <h3>Web Mobile Rasmi HPP</h3>
+  </center>
+	
+  <a href="#page2" class="ui-btn">Sejarah</a>
+   <a href="#page3" class="ui-btn">Lawatan Pertama</a>
+  </div>
+  
+  </div>
+<!--END Page 1 -->
+  
+  
+  
+  
+ <!--Page 2 -->
+<div data-role="page" id="page2" >
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Kembali">
+	<h3>Sejarah</h3>
+  </div>
+  
+  <!--content -->
+  <div role="main" class="ui-content">
+  <h2>Permulaan</h2>
+  <img src="gambar/1sthosp.bmp" />
+  
+  
+  <h3>Penubuhan</h3>
+  <p>Hospital Pulau Pinang merupakan sebuah <strong>pusat rujukan yang cemerlang</strong> dalam perkhidmatan penjagaan kesihatan di Wilayah Utara, 
+  Semenanjung Malaysia. Hospital ini juga adalah di antara kemudahan rawatan kesihatan yang terawal diadakan di negara ini.
+  </p>
+
+  <!-- Untuk buat pop up message-->
+		<a href="#pop1" class="ui-btn ui-btn-inline" data-rel="popup" data-transition="pop">Visi</a>
+		<div data-role="popup" id="pop1">
+		<!-- untuk tambah button close pada popup message-->
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<h3>Visi</h3>
+				<p>Menjadi jentera pentadbiran Kerajaan Negeri yang bertaraf dunia pada 2015 untuk kebajikan dan kesejahteraan yang berkualiti dan kemakmuran kepada rakyat.</p>
+		</div>
+
+<!--- untuk buat dialog box -->
+  <a href="#pop2" class="ui-btn ui-btn-inline" data-rel="popup" data-transition="pop">Misi</a>
+  <div data-role="popup" id="pop2">
+  
+  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+   
+  <h3>Misi</h3>
+  <p>Hospital Pulau Pinang akan menyediakan perkhidmatan rawatan kuratif, diagnostik dan pemulihan yang efisien, berkesan dan berkualiti dengan 
+  menitikberatkan aspek latihan dan penyelidikan, pembangunan serta memastikan nilai-nilai budaya korporat diterapkan kepada setiap lapisan anggota kesihatannya.
+  </p>
+  <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-icon-shadow">Kembali</a>
+  <a href="#page3" class="ui-btn ui-corner-all ui-icon-shadow" data-transition="flow">Lawatan Pertama</a> 
+ </div>
+ 
+  <img src="gambar/1sthosp.bmp" />
+  
+  <p>
+  1812 - Sebuah hospital sementara telah didirikan di sebuah tapak di mana letaknya Hotel Eastern & Oriental sekarang.
+  <br>
+  1854 - Saudagar Cina Ah Po telah membina Pauper Hospital untuk keperluan rawatan para penagih candu.
+  
+  <p />
+  <a href="#page3" class="ui-btn" data-transition="pop">Lawatan Pertama</a>
+  
+  </div>
+  
+  <!--footer -->
+  <div data-role="footer" data-position="fixed">
+   <a href="#page1" class="ui-btn">Page1</a>
+  </div>
+ 
+ </div> 
+ <!--END Page 2 -->
+ 
+ 
+  <!--Page 3 -->
+<div data-role="page" id="page3" >
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Kembali">
+	<h3>Lawatan Pertama</h3>
+  </div>
+  
+  <!--content -->
+  <div role="main" class="ui-content">
+  <h2>Permulaan</h2>
+ <p>Hospital Pulau Pinang merupakan hospital rujukan. Ini bermakna pesakit-pesakit yang ingin mendapatkan perkhidmatan kepakaran di hospital ini hendaklah
+ dirujuk daripada pegawai perubatan yang bertauliah, sama ada dari hospital-hospital atau klinik-klinik kerajaan dan swasta. Ini tidak termasuk kes-kes 
+ kecemasan, kemalangan dan ibu-ibu yang hendak bersalin di mana pesakit-pesakit boleh mendaftarkan diri mereka di Jabatan Kecemasan dan Trauma dan Hospital Bersalin.
+</p>
+ 
+<p>
+Dokumen yang diperlukan adalah :
+</p>
+
+<ol> 
+
+<li> Dokumen pengenalan diri yang sah :
+</li>
+
+<li>Kad Pengenalan
+</li>
+
+<li>Dokumen perjalanan bagi warga asing
+</li>
+
+<li>Surat akuan jabatan bagi anggota kerajaan
+</li>Surat akuan majikan bagi anggota swasta
+
+</ol>
+
+
+
+<a href="#page2" class="ui-btn" data-transition="turn" data-direction="reverse">Sejarah</a>
+  
+  </div>
+  
+  <!--footer -->
+  <div data-role="footer" data-position="fixed">
+   <a href="#page2" class="ui-btn">Page2</a>
+  </div>
+ 
+</div>
+<!--END Page 3 -->
+
+</body>
+</html>
+
