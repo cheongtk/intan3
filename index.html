@@ -7,13 +7,9 @@
 
 
 
- <link rel="stylesheet" href="css/chong.min.css" />
+  <link rel="stylesheet" href="css/chong.min.css" />
   <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
   <link rel="stylesheet" href="css/jquery.mobile.structure.min.css" />
-
-
-
-
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile.min.js"></script>
@@ -45,8 +41,20 @@
   
  <!--Page 2 -->
 <div data-role="page" id="page2" >
+  <!--panel-->
+  <div data-role="panel" id="panel1" data-display="overlay">
+    <h3>Senarai Mukasurat daa di bawah</h3>
+	<br />
+	
+	<ul data-role="listview">
+	 <li><a href="luar1.html" data-transition="turn">Go to luar1.html</a></li>
+	 <li><a href="luar2.html">Isi 2</a></li>
+	 <li><a href="luar3.html">Isi 3</a></li>
+	</div>
+
 	<!--header -->
   <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Kembali">
+  <a href="#panel1" data-icon="bars" data-iconpos="notext">Menu</a>
 	<h3>Sejarah</h3>
   </div>
   
@@ -75,10 +83,16 @@
   
   <!--footer -->
   <div data-role="footer" data-position="fixed">
-   <a href="#page1" class="ui-btn">Page1</a>
+  <div data-role="navbar">
+   <ul>
+    <li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist"><Sejarah</li></a>
+	<li><a href="#page3" data-icon="star">Lawatan Pertama</li></a>
+	<li><a href="#page4" data-icon="gear">Direktori</li></a>
+   </ul>	
   </div>
- 
- </div> 
+  </div> 
+  
+ </div>
  </div>
 <!--END Page 2 --> 
  
@@ -110,27 +124,23 @@ Dokumen yang diperlukan adalah :
 
 <div data-role="collapsible"> 
 <h4> Dokumen 1 yang diperlukan adalah : </h4>
-<p>Dokumen pengenalan diri yang sah : </p>
+<p>Dokumen pengenalan diri yang sah </p>
 </div>
-
-
 
 <div data-role="collapsible"> 
 <h4> Dokumen 2 yang diperlukan adalah : </h4>
-<p>Kad Pengenalan
-</p>
+<p>Kad Pengenalan </p>
 </div>
 
 <div data-role="collapsible"> 
 <h4> Dokumen 3 yang diperlukan adalah : </h4>
-<p>Dokumen perjalanan bagi warga asing
-</p>
+<p>Dokumen perjalanan bagi warga asing </p>
 </div>
 
 <div data-collapsed="false"> 
 <h4> Dokumen 4 yang diperlukan adalah : </h4>
 <p>Surat akuan jabatan bagi anggota kerajaan
-</p>Surat akuan majikan bagi anggota swasta
+Surat akuan majikan bagi anggota swasta</p>
 </div>
 
 </div>
@@ -139,7 +149,7 @@ Dokumen yang diperlukan adalah :
 
 <a href="#page2" class="ui-btn" data-transition="turn" data-direction="reverse">Sejarah</a>
   
-  </div>
+ </div>
   
   <!--footer -->
   <div data-role="footer" data-position="fixed">
@@ -154,73 +164,64 @@ Dokumen yang diperlukan adalah :
 	  
   <!--content -->
   <div role="main" class="ui-content">
- 	
+  <div data-role="popup" id="d1">
+    <a href="tel:+60165748542" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">phone</a>
+	<a href="sms://60164758542" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">hantar SMS</a>
+	<a href="mailto:cheongtk@yahoo.com" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">emel</a>
+  </div>
+  
+  <div data-role="popup" id="d2">
+    <a href="tel:+60165748542" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">phone</a>
+	<a href="sms://60164758542" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">hantar SMS</a>
+	<a href="mailto:cheongtk@yahoo.com" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">emel</a>
+  </div>
+  
   <h3>Selamat Datang ke Page 4 Direktori HPP</h3>
   
-  <ul data-role="listview">
-    <li>
+  <ul data-role="listview" data-filter="true" data-filter-placeholder="Taipkan Nama">
+   
+   <li><a href="#d1" data-rel="popup" data-transition="slideup">
 	<img src="gambar/yasmin.jpg" width="150" />
     <h3>Dato' Yasmin</h3>
 	<p>PENGARAH HPP</P>
-	</li>
+   </li></a>
+  
 	
-	<a href="tel:+60165748542" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">phone</a>
-	<a href="sms://60164758542" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">hantar SMS</a>
-	<a href="mailto:cheongtk@yahoo.com" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">emel</a>
-	
-	
-	<li>
+	<li><a href="#d2" data-rel="popup" data-transition="slideup">
 	<img src="gambar/jamaliah.jpg" width="150" />
     <h3>Dr. Jamaliah</h3>
 	<p>TIMBALAN PENGARAH (PERUBATAN I) HPP</P>
-	<p>
-    <a href="tel:+60165748542" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">phone</a>
-	<a href="sms://60164758542" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">hantar SMS</a>
-	<a href="mailto:cheongtk@yahoo.com" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">emel</a>
-	</p>
-  </li>
+	</li></a>
+ 
   
-  
-	<li>
+	<li><a href="#d1" data-rel="popup" data-transition="slideup">
 	<img src="gambar/elizabeth.jpg" width="150" />
     <h3>Dr. Elizabeth</h3>
 	<p>TIMBALAN PENGARAH (PERUBATAN II) HPP</P>
-	<p>
-    <a href="tel:+60165748542" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">phone</a>
-	<a href="sms://60164758542" class="ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-btn-inline">hantar SMS</a>
-	<a href="mailto:cheongtk@yahoo.com" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">emel</a>
-	</p>
-  </li>
+	</li></a>
 	
-	<li>
+	<li><a href="#d1" data-rel="popup" data-transition="slideup">
 	<img src="gambar/haji.jpg" width="150" />
     <h3>Tn. Haji Ederis</h3>
 	<p>TIMBALAN PENGARAH (PENGURUSAN) HPP</P>
-	</li>
+	</li></a>
 	
-	<li>
+		
+	<li><a href="#d1" data-rel="popup" data-transition="slideup">
 	<img src="gambar/adi.jpg" width="150" />
 	<h3>En. Adi</h3>
 	<p>PEGAWAI TEKNOLOGI MAKLUMAT HPP</P>
-	</li>
+	</li></a>
+   </ul>	
+	</div>
 	
 	 <!--footer -->
   <div data-role="footer" data-position="fixed">
    <a href="#page1" class="ui-btn">Page1</a>
   </div>
- 
-	
-	
-	
   
   </div>
  
-  </div>
-
-
-
-
-
 </body>
 </html>
 
